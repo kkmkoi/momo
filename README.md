@@ -4,7 +4,7 @@ A from-scratch AI Agent Runtime in Go, built without any agent frameworks. Suppo
 
 ## Demo
 
-<a href="https://github.com/kkmkoi/momo/raw/refs/heads/main/demo/momo-demo.mp4">
+<a href="demo/momo-demo.mp4">
   <img src="demo/thumbnail.jpg" alt="点击播放演示视频" width="100%">
 </a>
 
