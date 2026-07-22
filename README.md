@@ -4,9 +4,9 @@ A from-scratch AI Agent Runtime in Go, built without any agent frameworks. Suppo
 
 ## Demo
 
-[![momo AI Agent Runtime Demo](demo/momo-demo.mp4)](demo/momo-demo.mp4)
+<video src="demo/momo-demo.mp4" controls width="100%"></video>
 
-> 点击上方图片观看演示视频，展示 momo 的实时流式响应、工具调用和多会话管理功能。
+> 演示 momo 的实时流式响应、工具调用和多会话管理功能。
 
 ## Architecture
 
