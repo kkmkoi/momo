@@ -4,9 +4,11 @@ A from-scratch AI Agent Runtime in Go, built without any agent frameworks. Suppo
 
 ## Demo
 
-<video src="demo/momo-demo.mp4" controls width="100%"></video>
+<a href="demo/momo-demo.mp4">
+  <img src="demo/thumbnail.jpg" alt="点击播放演示视频" width="100%">
+</a>
 
-> 演示 momo 的实时流式响应、工具调用和多会话管理功能。
+> 点击图片观看演示视频（momo 的实时流式响应、工具调用和多会话管理）。
 
 ## Architecture
 
@@ -55,13 +57,13 @@ User Input → LLM → Tool Call? → Execute → LLM → Tool Call? ...
 
 ### Tools
 
-| Tool         | Description                                                              |
-| ------------ | ------------------------------------------------------------------------ |
-| `calculator` | Arithmetic expression evaluator (+, -, *, /, **, sqrt, sin, cos, etc.)   |
+| Tool           | Description                                                               |
+| -------------- | ------------------------------------------------------------------------- |
+| `calculator` | Arithmetic expression evaluator (+, -, *, /, **, sqrt, sin, cos, etc.)    |
 | `web`        | Fetch any URL and return readable text content. Also used for web search. |
-| `read_docs`  | Read any local file.                                                     |
-| `get_time`   | Get current date and time.                                               |
-| `weather`    | Real-time weather via wttr.in (free, no API key).                        |
+| `read_docs`  | Read any local file.                                                      |
+| `get_time`   | Get current date and time.                                                |
+| `weather`    | Real-time weather via wttr.in (free, no API key).                         |
 
 ## Quick Start
 
