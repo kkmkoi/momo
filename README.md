@@ -83,6 +83,19 @@ go run ./cmd/server/
 go run ./cmd/server/ --model gpt-4o-mini --api-url https://api.openai.com/v1
 ```
 
+#### 使用 DeepSeek
+
+```bash
+# 设置 DeepSeek API key（从 https://platform.deepseek.com/ 获取）
+export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+
+# 使用 DeepSeek-V3 模型运行
+go run ./cmd/server/ --model deepseek-chat --api-url https://api.deepseek.com/v1
+
+# 使用 DeepSeek-R1 推理模型运行
+go run ./cmd/server/ --model deepseek-reasoner --api-url https://api.deepseek.com/v1
+```
+
 Open http://localhost:8080 in your browser.
 
 ### Usage Examples
@@ -98,8 +111,8 @@ Open http://localhost:8080 in your browser.
 ```bash
 go run ./cmd/server/ \
   --api-key sk-... \           # OpenAI API key (default: OPENAI_API_KEY env)
-  --model gpt-4o-mini \         # LLM model
-  --api-url https://api.openai.com/v1 \  # OpenAI-compatible API base
+  --model gpt-4o-mini \         # LLM model (DeepSeek: deepseek-chat / deepseek-reasoner)
+  --api-url https://api.openai.com/v1 \  # OpenAI-compatible API base (DeepSeek: https://api.deepseek.com/v1)
   --port 8080 \                 # HTTP server port
   --max-turns 999 \             # Max turns per request
   --data-dir ./data             # Session persistence directory
